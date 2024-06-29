@@ -37,6 +37,7 @@
 }
 .side-menu-main {
   padding-left: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .side-menu-bar-one {
@@ -96,47 +97,158 @@
   font-weight: 700;
 }
 
-/* esitmate profit */
-.middle-part-estimate-profit {
-  background-image: linear-gradient(-12deg, #2a57d7 0, #9eeeff 100%);
-  border-radius: 10px;
-  margin-top: 40px;
-  padding-bottom: 20px;
+/* profile  */
+.profile-card {
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-bottom: 5px solid #4d9cf8;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.estimate-heading {
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-person img {
+  height: 120px;
+  width: 120px;
+  background-color: #999999;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.person-name {
+  color: #777777;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.person-work {
+  color: #aaaaaa;
+  font-size: 19px;
+  margin-top: -5px;
+}
+
+.person-details {
+  margin-top: 30px;
+  background-color: #e8e8e8;
+  padding: 20px 30px;
+  /* line-height: 1; */
+}
+
+.person-details i {
+  color: #878787;
+}
+.person-address {
+  color: #878787;
+  font-size: 13.5px;
+  font-weight: 400;
+}
+
+.person-edit-profile {
+  width: 100%;
+  background-color: #4d9cf8;
+  padding: 5px;
   color: white;
-  padding: 10px 20px;
-  border-bottom: 1px solid white;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+.person-add-friend {
+  width: 100%;
+  background-color: #4d9cf8;
+  padding: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  margin: 8px 0;
+}
+.person-edit-profile:hover {
+  width: 100%;
+  background-color: #d14d1a;
+  color: white;
+}
+.person-add-friend:hover {
+  width: 100%;
+  background-color: #d14d1a;
+  color: white;
+}
+.person-soical-media img {
+  margin-top: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* part2  */
+/* .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 28px 0px;
+} */
+
+.person-card-coin {
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+
+  border-bottom: 5px solid #4d9cf8;
+}
+.card-heading {
+  display: flex;
+}
+.card-coin-one img {
+  width: 40px;
+  margin-top: 5px;
+}
+.coin-info {
+  margin-left: 20px;
+}
+.coin-name {
+  color: #505458;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coin-upcoming {
+  color: #999999;
+  font-weight: 500;
+  margin-top: 0px;
+  font-size: 14px;
+}
+.card-coin-price {
+  color: #6fc334;
   font-size: 18px;
   font-weight: 500;
+  /* margin-top: 5px; */
 }
-.estimate-price {
-  font-size: 40px;
+.card-coin-price-slash {
+  font-size: 18px;
+  font-weight: 600;
+  color: #52565a;
+}
+.card-footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-buy-token {
+  background-color: #4d9cf8;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
   color: white;
-  font-weight: 800;
-  padding-left: 20px;
-  position: relative;
-}
-.estimate-price-btc {
-  position: absolute;
-  font-size: 16px;
-  left: 200px;
-  top: 10px;
-  font-weight: 700;
-  color: #f4f61e;
-}
-.estimate-price-dollor {
-  font-size: 20px;
   font-weight: 500;
-  padding-left: 20px;
-  color: #e3dcdc;
+  border-radius: 30px;
 }
-
-/* chart heading  */
-.chart-heading {
-  color: #676767;
+.click {
+  color: white;
+  font-weight: 900;
+  margin-right: 5px;
 }
-
+.card-buy-token:hover {
+  background-color: #d14d1a;
+}
 /*************************** coin details *************************/
 .main-part {
   width: 100%;
@@ -145,48 +257,6 @@
 .part-2 {
   background-color: #f7f7f7;
   padding: 30px;
-}
-.coin-details {
-  margin-top: 30px;
-  border: 2px solid #eeeeee;
-  padding: 10px;
-  background-color: white;
-}
-.coin-one {
-  margin-top: 10px;
-  padding: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 500;
-  border: 2px solid #eeeeee;
-}
-/* .coin-clr {
-    color: #505458;
-  } */
-.bitcoin-image img {
-  width: 35px;
-}
-
-/* chart */
-.chart-main {
-  margin-top: 30px;
-  padding: 10px;
-  border: 2px solid #eeeeee;
-  background-color: white;
-}
-.price-chart {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.chart-icon i {
-  cursor: pointer;
-  font-size: 20px;
-}
-.chart-img img {
-  width: 100%;
 }
 
 /* watching list */
@@ -248,60 +318,6 @@
   margin-top: 20px;
 }
 
-/* table */
-.table-heading {
-  color: #676767;
-}
-.chart-main-table {
-  margin-top: 50px;
-  padding: 30px;
-  background-color: white;
-}
-.row-heading th {
-  color: #767676;
-}
-.table-info-details {
-  background-color: #882a2a;
-}
-.chart-status {
-  border-radius: 40px;
-  background-color: rgb(49, 216, 183);
-  padding: 1px 10px;
-  font-size: 14px;
-  color: white;
-}
-.chart-amount {
-  color: rgb(29, 209, 92);
-  font-weight: 600;
-}
-.chart-status-sell {
-  border-radius: 40px;
-  background-color: #ff9041;
-  padding: 1px 10px;
-  font-size: 14px;
-  color: white;
-}
-.chart-status-exchange {
-  border-radius: 40px;
-  background-color: #777777;
-  padding: 1px 10px;
-  font-size: 14px;
-  color: white;
-}
-.chart-status-cancel {
-  border-radius: 40px;
-  background-color: #ff5c6c;
-  padding: 1px 10px;
-  font-size: 14px;
-  color: white;
-}
-.price-chart-history {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(178, 173, 173);
-  padding-bottom: 20px;
-}
-
 @media (min-width: 5px) and (max-width: 320px) {
   /* .crypto*/
   .crypto-heading {
@@ -332,16 +348,6 @@
     color: #777777;
     margin-left: 6px;
     font-weight: 700;
-    font-size: 13px;
-  }
-
-  /* chart heading  */
-  .chart-heading {
-    color: #676767;
-    font-size: 17px;
-  }
-  .chart-icon i {
-    cursor: pointer;
     font-size: 13px;
   }
 
@@ -406,67 +412,6 @@
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
-  }
-
-  /* table */
-  .table-heading {
-    color: #676767;
-    font-size: 18px;
-  }
-  .table-info {
-    overflow: scroll;
-  }
-  .table-order {
-    font-size: 13px;
-  }
-  .chart-main-table {
-    margin-top: 50px;
-    padding: 30px;
-    background-color: white;
-  }
-  .row-heading th {
-    color: #767676;
-  }
-  .table-info-details {
-    background-color: #882a2a;
-  }
-  .chart-status {
-    border-radius: 40px;
-    background-color: rgb(49, 216, 183);
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-amount {
-    color: rgb(29, 209, 92);
-    font-weight: 600;
-  }
-  .chart-status-sell {
-    border-radius: 40px;
-    background-color: #ff9041;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-exchange {
-    border-radius: 40px;
-    background-color: #777777;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-cancel {
-    border-radius: 40px;
-    background-color: #ff5c6c;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .price-chart-history {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(178, 173, 173);
-    padding-bottom: 20px;
   }
 }
 
@@ -505,16 +450,6 @@
     font-size: 13px;
   }
 
-  /* chart heading  */
-  .chart-heading {
-    color: #676767;
-    font-size: 17px;
-  }
-  .chart-icon i {
-    cursor: pointer;
-    font-size: 13px;
-  }
-
   /* watching list */
   .watching-list {
     margin-top: 30px;
@@ -576,65 +511,6 @@
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
-  }
-
-  /* table */
-  .table-heading {
-    color: #676767;
-    font-size: 18px;
-  }
-  .table-info {
-    overflow: scroll;
-  }
-
-  .chart-main-table {
-    margin-top: 50px;
-    padding: 30px;
-    background-color: white;
-  }
-  .row-heading th {
-    color: #767676;
-  }
-  .table-info-details {
-    background-color: #882a2a;
-  }
-  .chart-status {
-    border-radius: 40px;
-    background-color: rgb(49, 216, 183);
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-amount {
-    color: rgb(29, 209, 92);
-    font-weight: 600;
-  }
-  .chart-status-sell {
-    border-radius: 40px;
-    background-color: #ff9041;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-exchange {
-    border-radius: 40px;
-    background-color: #777777;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-cancel {
-    border-radius: 40px;
-    background-color: #ff5c6c;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .price-chart-history {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(178, 173, 173);
-    padding-bottom: 20px;
   }
 }
 
@@ -671,16 +547,6 @@
     font-weight: 700;
   }
 
-  /* chart heading  */
-  .chart-heading {
-    color: #676767;
-    font-size: 17px;
-  }
-  .chart-icon i {
-    cursor: pointer;
-    font-size: 13px;
-  }
-
   /* watching list */
   .watching-list {
     margin-top: 30px;
@@ -743,68 +609,6 @@
     font-weight: 400;
     margin-top: 20px;
   }
-
-  /* table */
-  .table-heading {
-    color: #676767;
-    font-size: 18px;
-  }
-  .table-info {
-    overflow: scroll;
-  }
-  .table-order {
-    font-size: 10px;
-  }
-
-  .chart-main-table {
-    margin-top: 50px;
-    padding: 30px;
-    background-color: white;
-  }
-  .row-heading th {
-    color: #767676;
-  }
-  .table-info-details {
-    background-color: #882a2a;
-  }
-  .chart-status {
-    border-radius: 40px;
-    background-color: rgb(49, 216, 183);
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-amount {
-    color: rgb(29, 209, 92);
-    font-weight: 600;
-  }
-  .chart-status-sell {
-    border-radius: 40px;
-    background-color: #ff9041;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-exchange {
-    border-radius: 40px;
-    background-color: #777777;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-cancel {
-    border-radius: 40px;
-    background-color: #ff5c6c;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .price-chart-history {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(178, 173, 173);
-    padding-bottom: 20px;
-  }
 }
 
 /* 1050px */
@@ -838,16 +642,6 @@
     color: #777777;
     margin-left: 6px;
     font-weight: 700;
-  }
-
-  /* chart heading  */
-  .chart-heading {
-    color: #676767;
-    font-size: 17px;
-  }
-  .chart-icon i {
-    cursor: pointer;
-    font-size: 13px;
   }
 
   /* watching list */
@@ -911,67 +705,5 @@
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
-  }
-
-  /* table */
-  .table-heading {
-    color: #676767;
-    font-size: 18px;
-  }
-  .table-info {
-    overflow: scroll;
-  }
-  .table-order {
-    font-size: 11px;
-    margin-top: -5px;
-  }
-  .chart-main-table {
-    margin-top: 50px;
-    padding: 30px;
-    background-color: white;
-  }
-  .row-heading th {
-    color: #767676;
-  }
-  .table-info-details {
-    background-color: #882a2a;
-  }
-  .chart-status {
-    border-radius: 40px;
-    background-color: rgb(49, 216, 183);
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-amount {
-    color: rgb(29, 209, 92);
-    font-weight: 600;
-  }
-  .chart-status-sell {
-    border-radius: 40px;
-    background-color: #ff9041;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-exchange {
-    border-radius: 40px;
-    background-color: #777777;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .chart-status-cancel {
-    border-radius: 40px;
-    background-color: #ff5c6c;
-    padding: 1px 10px;
-    font-size: 14px;
-    color: white;
-  }
-  .price-chart-history {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(178, 173, 173);
-    padding-bottom: 20px;
   }
 }
