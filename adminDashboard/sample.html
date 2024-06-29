@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+
+
+        .settings-menu {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .settings-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .settings-item i:first-child {
+            margin-right: 10px;
+        }
+
+        .settings-item span {
+            flex: 1;
+        }
+
+        .dropdown-arrow {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .submenu {
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .submenu-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .submenu-item:last-child {
+            border-bottom: none;
+        }
+
+        .submenu-item i {
+            margin-right: 10px;
+        }
+
+        .settings-item:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>MAIN</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user-cog"></i> Trader Profile</a></li>
+            <li><a href="#"><i class="fas fa-headset"></i> Support</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#settings-dropdown">
+                    <i class="fas fa-cog"></i> Settings <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="collapse" id="settings-dropdown">
+                    <ul>
+                        <li><a href="#">Personal Settings</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fas fa-lock"></i> Access Pages</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Mailbox</a></li>
+        </ul>
+
+        <h2>DATA VISUALIZATION</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-chart-pie"></i> Echarts</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i> Morris Charts</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Content Area</h1>
+        <p>This is the content area where you can display your main content. </p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
