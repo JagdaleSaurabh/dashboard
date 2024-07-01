@@ -19,7 +19,7 @@
 .bell-notify {
   font-size: 12px;
 }
-.nav-porfile {
+.nav-profile {
   cursor: pointer;
 }
 .nav-dropdown {
@@ -30,13 +30,13 @@
 
 .side-bar-menu-heading {
   color: #a6a6a6;
-  /* padding: 15px; */
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 15px;
 }
 .side-menu-main {
   padding-left: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .side-menu-bar-one {
@@ -57,18 +57,18 @@
   background-color: #f1f6f7;
   border-left: 5px solid #4d9cf8;
 }
-.menu-arrow {
-  font-size: 20px;
-  display: flex;
-  align-items: end;
-}
+
 .arrow-icon {
   font-size: 22px;
 }
 
 /* .crypto*/
+.main-part-background {
+  background-color: #f7f7f7;
+  padding: 0 30px;
+}
 .crypto-heading {
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 10px;
   font-weight: 500;
   color: #767676;
@@ -87,7 +87,6 @@
 }
 .crypto-heading-location-home {
   color: #777777;
-
   font-weight: 500;
 }
 .crypto-heading-location-clr {
@@ -138,14 +137,7 @@
 }
 
 /*************************** coin details *************************/
-.main-part {
-  width: 100%;
-}
 
-.part-2 {
-  background-color: #f7f7f7;
-  padding: 30px;
-}
 .coin-details {
   margin-top: 30px;
   border: 2px solid #eeeeee;
@@ -162,9 +154,7 @@
   font-weight: 500;
   border: 2px solid #eeeeee;
 }
-/* .coin-clr {
-    color: #505458;
-  } */
+
 .bitcoin-image img {
   width: 35px;
 }
@@ -206,7 +196,7 @@
 }
 .watching-list-card {
   padding: 20px;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: #ffffff;
 }
 .watching-list-card-img img {
@@ -252,7 +242,7 @@
 .table-heading {
   color: #676767;
 }
-.chart-main-table {
+.order-table {
   margin-top: 50px;
   padding: 30px;
   background-color: white;

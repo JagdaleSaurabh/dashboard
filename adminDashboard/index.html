@@ -14,7 +14,7 @@
 <body>
 
 
-    <div class="">
+    <div>
         <nav class="navbar navbar-expand-lg navbar-color ">
             <div class="container-fluid ">
                 <a class="navbar-brand text-white ms-2" href="#"><i class="ri-funds-box-line fs-4 me-2"></i>
@@ -52,11 +52,9 @@
                     </ul>
                     <div class="d-flex " role="search">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item me-4 mt-2">
-                                <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
 
-                                </button> -->
+                            <li class="nav-item me-4 mt-2 nav-profile">
+
                                 <div class="dropdown">
                                     <div class="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="ri-notification-3-fill fs-5 text-white position-relative">
@@ -75,7 +73,7 @@
 
                             </li>
 
-                            <li class="nav-item me-3 mt-2">
+                            <li class="nav-item me-3 mt-2 nav-profile">
 
                                 <div class="dropdown">
                                     <div class="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -95,10 +93,7 @@
 
                             </li>
 
-
-
-
-                            <li class="nav-item nav-porfile">
+                            <li class="nav-item nav-profile p-1">
                                 <div class="d-flex dropdown " data-bs-toggle="dropdown" aria-expanded="false">
                                     <a class="nav-link active text-white navbar-menu-name" aria-current="page"
                                         href="#"><img src="./image/person.png" alt="" class="" width="30px">
@@ -123,9 +118,11 @@
             </div>
         </nav>
 
+        <!-- -  -->
+
         <div>
-            <div class="row main-part">
-                <div class="col-lg-3 col-9 col-md-4 col-xl-2 bg-white side-menu-main">
+            <div class="row w-100">
+                <div class=" col-9 col-md-4 col-lg-2  bg-white side-menu-main">
                     <div class="side-bar-menu-heading">MAIN</div>
                     <div class="d-flex flex-column side-menu-bar ">
 
@@ -150,13 +147,10 @@
                         </div>
 
 
-
-
-
-
                         <div class=" dropdown d-flex justify-content-between side-menu-bar-one"
                             data-bs-toggle="dropdown" aria-expanded="false"><span><i
-                                    class="ri-settings-2-line menu-icon me-2"></i><span>Access Pages</span></span><span>
+                                    class="ri-settings-2-line menu-icon me-2"></i><span>Access
+                                    Pages</span></span><span>
                                 <i class="ri-arrow-left-s-line arrow-icon"></i>
                             </span>
 
@@ -169,7 +163,8 @@
 
                         <div class=" dropdown d-flex justify-content-between side-menu-bar-one"
                             data-bs-toggle="dropdown" aria-expanded="false"><span><i
-                                    class="ri-settings-2-line menu-icon me-2"></i><span>Mail Box</span></span><span>
+                                    class="ri-settings-2-line menu-icon me-2"></i><span>Mail
+                                    Box</span></span><span>
                                 <i class="ri-arrow-left-s-line arrow-icon"></i>
                             </span>
 
@@ -190,8 +185,12 @@
 
 
                         <div class=" dropdown d-flex justify-content-between side-menu-bar-one"
-                            data-bs-toggle="dropdown" aria-expanded="false"><span><i
-                                    class="ri-settings-2-line menu-icon me-2"></i><span>Echarts</span></span><span>
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                <i class="ri-settings-2-line menu-icon me-2"></i>
+                                <span>Echarts</span>
+                            </span>
+                            <span>
                                 <i class="ri-arrow-left-s-line arrow-icon"></i>
                             </span>
 
@@ -205,9 +204,14 @@
 
 
                         <div class=" dropdown d-flex justify-content-between side-menu-bar-one"
-                            data-bs-toggle="dropdown" aria-expanded="false"><span><i
-                                    class="ri-settings-2-line menu-icon me-2"></i><span>Morris
-                                    Charts</span></span><span>
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                <i class="ri-settings-2-line menu-icon me-2"></i>
+                                <span>
+                                    Morris Charts
+                                </span>
+                            </span>
+                            <span>
                                 <i class="ri-arrow-left-s-line arrow-icon"></i>
                             </span>
 
@@ -219,8 +223,12 @@
                         </div>
 
                         <div class=" dropdown d-flex justify-content-between side-menu-bar-one"
-                            data-bs-toggle="dropdown" aria-expanded="false"><span><i
-                                    class="ri-settings-2-line menu-icon me-2"></i><span>Charts JS</span></span><span>
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                <i class="ri-settings-2-line menu-icon me-2"></i>
+                                <span>Charts JS</span>
+                            </span>
+                            <span>
                                 <i class="ri-arrow-left-s-line arrow-icon"></i>
                             </span>
 
@@ -231,8 +239,12 @@
                             </ul>
                         </div>
                         <div class=" dropdown d-flex justify-content-between side-menu-bar-one"
-                            data-bs-toggle="dropdown" aria-expanded="false"><span><i
-                                    class="ri-settings-2-line menu-icon me-2"></i><span>Float Charts</span></span><span>
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                <i class="ri-settings-2-line menu-icon me-2"></i>
+                                <span>Float Charts</span>
+                            </span>
+                            <span>
                                 <i class="ri-arrow-left-s-line arrow-icon"></i>
                             </span>
 
@@ -312,24 +324,28 @@
                     </div>
 
                 </div>
-                <div class="col-md-8 col-lg-9 col-xl-10  part-2">
+
+
+
+                <!-- main-part  -->
+                <div class="col-12 col-md-8 col-lg-10   main-part-background">
                     <div class="crypto-heading-location ">
                         <div class="crypto-heading">User Profile</div>
-                        <div class="">
+                        <div>
                             <span class="crypto-heading-location-home me-1"><i class="ri-home-4-line me-2"></i>Home
                             </span>/<span class="crypto-heading-location-clr"> User Profile</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-9 col-lg-5 col-xl-4">
-                            <div class="cards">
+                            <div>
                                 <div class="middle-part-estimate-profit">
                                     <div class="estimate-heading">
                                         Estimated Profit Value
                                     </div>
 
-                                    <div class=" estimate-price">
-                                        1.002324 <span class="estimate-price-btc ">BTC</span>
+                                    <div class="estimate-price">
+                                        1.002324 <span class="estimate-price-btc">BTC</span>
                                     </div>
                                     <div class="estimate-price-dollor">
                                         $9,782.84
@@ -337,13 +353,13 @@
                                 </div>
                             </div>
 
-                            <div class="coin-details cards">
+                            <div class="coin-details">
                                 <div class="coin-one">
                                     <span class="bitcoin-image"><img src="./image/coin1.png" alt=""></span>
                                     <span>Bitcoin</span>
                                     <span class="coin-total-price">$8.958</span>
                                     <span class="text-success coin-total-price">4.98% <strong>
-                                            <i class="ri-arrow-up-line fs-"></i>
+                                            <i class="ri-arrow-up-line "></i>
                                         </strong></span>
                                 </div>
 
@@ -397,6 +413,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- watching list  -->
                     <div class="watching-list">
                         <h3 class="watching-list-heading">Watching List</h3>
 
@@ -578,7 +596,7 @@
                         </div>
                     </div>
 
-                    <div class="chart-main-table ">
+                    <div class="order-table ">
                         <div class="price-chart-history">
                             <h5 class="table-heading">Activities History</h5>
                             <span class="chart-icon">
@@ -611,7 +629,8 @@
                                     </tr>
                                     <tr class="table-order ">
                                         <th scope="row"><img src="./image/coin1.png" alt="" width="30px"
-                                                class="me-3">Buy Order</th>
+                                                class="me-3">Buy
+                                            Order</th>
                                         <td>gdf-34hb3nsjn</td>
                                         <td>GHWSCJEN4NF9MS</td>
                                         <td>@10:23:45</td>
@@ -629,7 +648,8 @@
                                     </tr>
                                     <tr class="table-order ">
                                         <th scope="row"><img src="./image/coin1.png" alt="" width="30px"
-                                                class="me-3">Buy Order</th>
+                                                class="me-3">Buy
+                                            Order</th>
                                         <td>gdf-34hb3nsjn</td>
                                         <td>GHWSCJEN4NF9MS</td>
                                         <td>@10:23:45</td>
@@ -638,7 +658,8 @@
                                     </tr>
                                     <tr class="table-order ">
                                         <th scope="row"><img src="./image/coin1.png" alt="" width="30px"
-                                                class="me-3">Sell Order</th>
+                                                class="me-3">Sell
+                                            Order</th>
                                         <td>gdf-34hb3nsjn</td>
                                         <td>GHWSCJEN4NF9MS</td>
                                         <td>@10:23:45</td>
@@ -647,7 +668,8 @@
                                     </tr>
                                     <tr class="table-order ">
                                         <th scope="row"><img src="./image/coin1.png" alt="" width="30px"
-                                                class="me-3">Sell Order</th>
+                                                class="me-3">Sell
+                                            Order</th>
                                         <td>gdf-34hb3nsjn</td>
                                         <td>GHWSCJEN4NF9MS</td>
                                         <td>@10:23:45</td>
@@ -656,7 +678,8 @@
                                     </tr>
                                     <tr class="table-order ">
                                         <th scope="row"><img src="./image/coin1.png" alt="" width="30px"
-                                                class="me-3">Sell Order</th>
+                                                class="me-3">Sell
+                                            Order</th>
                                         <td>gdf-34hb3nsjn</td>
                                         <td>GHWSCJEN4NF9MS</td>
                                         <td>@10:23:45</td>
@@ -671,6 +694,7 @@
 
             </div>
         </div>
+
     </div>
 
 

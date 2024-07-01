@@ -19,7 +19,7 @@
 .bell-notify {
   font-size: 12px;
 }
-.nav-porfile {
+.nav-profile {
   cursor: pointer;
 }
 .nav-dropdown {
@@ -30,14 +30,14 @@
 
 .side-bar-menu-heading {
   color: #a6a6a6;
-  /* padding: 15px; */
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 15px;
 }
 .side-menu-main {
   padding-left: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
 }
 
 .side-menu-bar-one {
@@ -58,18 +58,18 @@
   background-color: #f1f6f7;
   border-left: 5px solid #4d9cf8;
 }
-.menu-arrow {
-  font-size: 20px;
-  display: flex;
-  align-items: end;
-}
+
 .arrow-icon {
   font-size: 22px;
 }
 
 /* .crypto*/
+.main-part-background {
+  background-color: #f7f7f7;
+  padding: 0 30px;
+}
 .crypto-heading {
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 10px;
   font-weight: 500;
   color: #767676;
@@ -102,7 +102,7 @@
   background-color: white;
   margin-top: 30px;
   padding: 20px;
-  border-bottom: 5px solid #4d9cf8;
+  border-bottom: 3px solid #4d9cf8;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .profile {
@@ -126,15 +126,14 @@
 }
 .person-work {
   color: #aaaaaa;
-  font-size: 19px;
-  margin-top: -5px;
+  font-size: 16px;
 }
 
 .person-details {
-  margin-top: 30px;
+  margin-top: 15px;
   background-color: #e8e8e8;
-  padding: 20px 30px;
-  /* line-height: 1; */
+  padding: 20px 45px;
+  line-height: 1.7;
 }
 
 .person-details i {
@@ -180,20 +179,8 @@
   cursor: pointer;
 }
 
-/* part2  */
-/* .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  padding: 28px 0px;
-} */
-
 .person-card-coin {
-  background-color: white;
   margin: 15px;
-  padding: 20px;
-
-  border-bottom: 5px solid #4d9cf8;
 }
 .card-heading {
   display: flex;
@@ -233,12 +220,15 @@
   justify-content: space-between;
 }
 .card-buy-token {
+  width: 130px;
+  height: 30px;
   background-color: #4d9cf8;
   border: none;
   outline: none;
-  padding: 10px 15px;
+
   color: white;
   font-weight: 500;
+  font-size: 15px;
   border-radius: 30px;
 }
 .click {
@@ -249,15 +239,22 @@
 .card-buy-token:hover {
   background-color: #d14d1a;
 }
-/*************************** coin details *************************/
-.main-part {
-  width: 100%;
-}
 
-.part-2 {
-  background-color: #f7f7f7;
-  padding: 30px;
+.main-part-four-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-top: 30px;
 }
+.main-part-one-card {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #4d9cf8;
+  padding: 20px 10px;
+}
+/*************************** coin details *************************/
 
 /* watching list */
 .watching-list {
@@ -276,7 +273,7 @@
 }
 .watching-list-card {
   padding: 20px;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   background-color: #ffffff;
 }
 .watching-list-card-img img {
@@ -349,6 +346,16 @@
     margin-left: 6px;
     font-weight: 700;
     font-size: 13px;
+  }
+
+  /* main part  four card */
+  .main-part-four-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 30px;
   }
 
   /* watching list */
@@ -450,6 +457,16 @@
     font-size: 13px;
   }
 
+  /* main part  four card */
+  .main-part-four-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 30px;
+  }
+
   /* watching list */
   .watching-list {
     margin-top: 30px;
@@ -545,6 +562,15 @@
     color: #777777;
     margin-left: 6px;
     font-weight: 700;
+  }
+  /* main part  four card */
+  .main-part-four-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 30px;
   }
 
   /* watching list */
@@ -642,6 +668,16 @@
     color: #777777;
     margin-left: 6px;
     font-weight: 700;
+  }
+
+  /* main part  four card */
+  .main-part-four-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 30px;
   }
 
   /* watching list */
